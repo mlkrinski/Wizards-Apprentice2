@@ -1,0 +1,13 @@
+.imgLogoMK {
+  width: 40%;
+  height: 40%;
+}
+form.btn button {
+  border-left: none; /* Prevent double borders */
+}
+/*Clear Floats*/
+form.btnSearch::after {
+  content: "";
+  clear: both;
+  display: table;
+}

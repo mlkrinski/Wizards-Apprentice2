@@ -26,7 +26,7 @@
     <div class="container01">
       <header class="header">
         <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-          <div class="container-fluid">
+          <div class="container-fluid text-center">
             <a class="bg-primary" href="./index.html"
               ><img
                 class="imgLogoMK img-fluid rounded float-start"
@@ -34,7 +34,7 @@
                 alt="logoMK"
             /></a>
             <button
-              class="navbar-toggler btn-ou"
+              class="navbar-toggler btn-outline-light"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent"
@@ -73,13 +73,15 @@
               </ul>
               <form
                 class="btnSearch d-flex"
-                action="http://google.com.br/search?"
+                action="https://www.google.com.br/search?q"
                 target="_blank"
               >
                 <input
                   class="form-control me-2 bg-light"
-                  type="search"
-                  placeholder="Pesquise aqui..."
+                  type="text"
+                  name="q"
+                  id="box"
+                  placeholder="Pesquise no Google..."
                   aria-label="Search"
                 />
                 <button class="btn btn-outline-light" type="submit">

@@ -1,6 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;514&display=swap");
+* {
+  color: white;
+}
+.header {
+  font-size: 12px;
+  font-weight: bold;
+}
+.header #navItem:hover {
+  color: #9b9a9a;
+}
+.container01 {
+  background-image: url(../../image/wallpaper1.jpg);
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .imgLogoMK {
   width: 40%;
   height: 40%;
+}
+#button {
+  padding: 15px 35px;
+  border: 2px solid white;
 }
 form.btn button {
   border-left: none; /* Prevent double borders */

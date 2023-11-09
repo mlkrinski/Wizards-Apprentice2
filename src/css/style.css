@@ -6,36 +6,56 @@
   font-size: 20px;
   font-weight: bold;
 }
+
 .header #navItem:hover {
   color: #c1c1c1;
-  font-size: 150%;
+  font-size: 110%;
   display: block;
 }
 
 .container01 {
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(9, 9, 121, 1) 20%,
-    rgba(0, 212, 255, 1) 100%
-  );
+  background: rgb(0, 0, 139);
+  background: linear-gradient(106deg, #00008b 0%, #0000cd 50%, #0000ff 100%);
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.container11 {
+  background: rgb(0, 0, 139);
+  background: linear-gradient(90deg, #0000cd 0%, #4169e1 100%);
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.container21 {
+  background: rgb(0, 0, 139);
+  background: linear-gradient(90deg, #4169e1 0%, #0000cd 100%);
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.container31 {
+  background: rgb(0, 0, 139);
+  background: linear-gradient(106deg, #0000ff 0%, #0000cd 50%, #00008b 100%);
   min-height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.container03 {
-  margin-right: 20px;
-  text-align: end;
-}
 .container02 {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   min-height: 60vh;
+}
+.container03 {
+  margin-right: 20px;
+  text-align: end;
 }
 .imgLogoMK {
   width: 40%;

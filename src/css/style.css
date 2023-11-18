@@ -5,17 +5,66 @@
 .header {
   font-size: 20px;
   font-weight: bold;
+  color: white;
 }
 
 .header #navItem:hover {
-  color: #c1c1c1;
-  font-size: 110%;
+  color: #757373;
+  text-decoration: none;
   display: block;
 }
-
 .container01 {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(66, 66, 73, 1) 100%
+  );
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.container11 {
+  background: rgb(162, 187, 193);
+  background: linear-gradient(
+    0deg,
+    rgba(162, 187, 193, 1) 0%,
+    rgba(34, 193, 195, 1) 100%
+  );
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.container21 {
+  background: rgb(162, 187, 193);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(162, 187, 193, 1) 100%
+  );
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.container31 {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(66, 66, 73, 1) 0%,
+    rgba(34, 193, 195, 1) 100%
+  );
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*.container01 {
   background: rgb(0, 0, 139);
-  background: linear-gradient(106deg, #00008b 0%, #0000cd 50%, #0000ff 100%);
+  background: linear-gradient(180deg, #00008b 0%, #0000cd 50%, #0000ff 100%);
   min-height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -23,7 +72,7 @@
 }
 .container11 {
   background: rgb(0, 0, 139);
-  background: linear-gradient(90deg, #0000cd 0%, #4169e1 100%);
+  background: linear-gradient(180deg, #0000cd 0%, #4169e1 100%);
   min-height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -31,7 +80,7 @@
 }
 .container21 {
   background: rgb(0, 0, 139);
-  background: linear-gradient(90deg, #4169e1 0%, #0000cd 100%);
+  background: linear-gradient(180deg, #4169e1 0%, #0000cd 100%);
   min-height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -39,12 +88,12 @@
 }
 .container31 {
   background: rgb(0, 0, 139);
-  background: linear-gradient(106deg, #0000ff 0%, #0000cd 50%, #00008b 100%);
+  background: linear-gradient(180deg, #0000ff 0%, #0000cd 50%, #00008b 100%);
   min-height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-}
+}*/
 
 .container02 {
   display: flex;
@@ -73,4 +122,23 @@ form.btnSearch::after {
   content: "";
   clear: both;
   display: table;
+}
+.footer {
+  background-color: transparent;
+  height: 15vh;
+  font-size: 15px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+.footer a:hover {
+  color: #757373;
+}
+.footer .copyMK {
+  color: #d1c4c4;
 }

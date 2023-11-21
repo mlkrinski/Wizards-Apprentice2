@@ -112,3 +112,19 @@ form.btnSearch::after {
 .footer .copyMK {
   color: #d1c4c4;
 }
+@media (max-width: 768px) {
+  .myPhotos {
+    width: 70%;
+    height: auto;
+  }
+}
+@media (max-width: 767px) {
+  .footer {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .footer div {
+    display: flex;
+    flex-direction: row;
+  }
+}

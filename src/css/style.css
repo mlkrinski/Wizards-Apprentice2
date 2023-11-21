@@ -72,14 +72,7 @@
   margin-right: 20px;
   text-align: end;
 }
-.logoMenu {
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
+
 .myPhotos {
   width: 20vw;
   height: 20vw;
@@ -92,15 +85,7 @@
   padding: 15px 35px;
   border: 2px solid white;
 }
-form.btn button {
-  border-left: none; /* Prevent double borders */
-}
-/*Clear Floats*/
-form.btnSearch::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+
 .footer {
   background-color: transparent;
   height: 15vh;
@@ -125,6 +110,32 @@ form.btnSearch::after {
     width: 70%;
     height: auto;
   }
+  .logoMenu {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  #navbarSupportedContent {
+    text-align: end;
+  }
+  .container02 h3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .container02 h1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .container03 {
+    text-align: start;
+  }
 }
 @media (max-width: 767px) {
   .footer {
@@ -134,5 +145,10 @@ form.btnSearch::after {
   .footer div {
     display: flex;
     flex-direction: row;
+  }
+}
+@media (max-width: 320px) {
+  .footer {
+    font-size: 10px;
   }
 }

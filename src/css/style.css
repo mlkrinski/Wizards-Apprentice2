@@ -7,6 +7,9 @@
   font-weight: bold;
   color: white;
 }
+.linkEmail {
+  color: currentColor;
+}
 
 .header #navItem:hover {
   color: #757373;
@@ -79,7 +82,7 @@
   min-height: 60vh;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   align-content: center;
   flex-direction: row-reverse;
 }
@@ -97,21 +100,7 @@
     "item3 item4";
   gap: 5px;
 }
-.container03 {
-  flex: 1 0 auto;
-  border: 2px solid white;
-  display: grid;
-  padding: 100px;
-  align-content: space-evenly;
-  justify-items: start;
-  grid-template-columns: repeat(2, 1fr);
 
-  grid-template-areas:
-    "item1 item2"
-    "item3 item4"
-    "item5 item6";
-  gap: 5px;
-}
 .diploma {
   width: 100px;
 }
@@ -129,14 +118,30 @@
     "item3 item4";
   gap: 5px;
 }
+.section-header {
+  background-color: #098686;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.summary {
+  font-style: italic;
+}
 
 .imgGit {
   width: 500px;
   height: auto;
   border-radius: 10px;
-  border: 2px solid white;
+
   transition: 0.5s;
   cursor: pointer;
+}
+.imgCV {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-wrap: wrap;
 }
 .imgSkill {
   width: 250px;
@@ -166,10 +171,7 @@
   grid-area: item4;
   min-width: 250px;
 }
-.container03 {
-  margin-right: 20px;
-  text-align: end;
-}
+
 .titulosGrandes {
   display: flex;
   flex-direction: row;
@@ -183,7 +185,7 @@
 
 .myPhotos {
   width: 20vw;
-  height: 20vw;
+  height: auto;
 }
 .imgLogoMK {
   width: 40%;
@@ -254,6 +256,9 @@
   .footer {
     display: flex;
     flex-direction: column-reverse;
+  }
+  .diploma {
+    width: 50px;
   }
   .container02 {
     grid-template-areas:

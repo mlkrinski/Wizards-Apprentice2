@@ -1,5 +1,6 @@
 * {
   color: #fbfbfb;
+  box-sizing: border-box;
 }
 .header {
   font-size: 20px;
@@ -35,6 +36,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  display: flex;
+  flex-direction: column;
 }
 .container21 {
   background: rgb(162, 187, 193);
@@ -59,18 +62,85 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  display: flex;
+  flex-direction: column;
 }
 
-.container02 {
+.container02Main {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   min-height: 60vh;
 }
+.container02 {
+  flex: 1 0 auto;
+  display: grid;
+  padding: 10px;
+  align-content: space-between;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(2, 1fr);
+
+  grid-template-areas:
+    "item1 item2"
+    "item3 item4";
+  gap: 5px;
+}
+.container04 {
+  flex: 1 0 auto;
+  display: grid;
+  padding: 10px;
+  align-content: space-between;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(2, 1fr);
+
+  grid-template-areas:
+    "item1 item2"
+    "item3 item4";
+  gap: 5px;
+}
+.imgGit {
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.imgSkill {
+  width: 250px;
+  height: auto;
+}
+.item1 {
+  grid-area: item1;
+}
+.item2 {
+  grid-area: item2;
+  min-width: 250px;
+}
+.item3 {
+  grid-area: item3;
+  min-width: 250px;
+}
+.item4 {
+  grid-area: item4;
+  min-width: 250px;
+}
 .container03 {
   margin-right: 20px;
   text-align: end;
+}
+.titulosGrandes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.listaSkills {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .myPhotos {
@@ -142,9 +212,21 @@
     display: flex;
     flex-direction: column-reverse;
   }
-  .footer div {
-    display: flex;
-    flex-direction: row;
+  .container02 {
+    grid-template-areas:
+      "item1 item3"
+      "item2 item4";
+    .imgSkill {
+      width: 100px;
+      height: auto;
+    }
+    .container02 {
+      flex-direction: column-reverse;
+    }
+    .footer div {
+      display: flex;
+      flex-direction: row;
+    }
   }
 }
 @media (max-width: 320px) {
